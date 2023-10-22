@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BBC's World</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <style>
+
+        nav ul{
+            display: flex;
+            /* flex-direction: row; */
+            justify-content: space-between;
+            align-items: center;
+            background-color: black;
+            font-size: large;
+            height: 100px;
+            margin: 0%;
+            padding-right: 80px;
+            padding-left: 90px;
+        }
+        ul li {
+            display: flex;
+            padding-left: 36px;
+            justify-content: space-around;
+            align-items: center;   
+        }
+
+        nav a{
+            color: white;
+            text-decoration: none;
+        }        
+
+        nav img{
+            width: 72px;
+            height: 60px;
+        }
+        
+        .sec1{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            gap: 5px;}
+
+        /* .sec1 p{border: 2px solid salmon;} */
+
+        p:nth-of-type(1){
+            grid-area: 1/1/3/5;}
+
+        p:nth-of-type(2){
+            grid-area: 3/1/5/3;}
+
+        p:nth-of-type(3){
+            grid-area: 3/3/4/4;}
+
+        p:nth-of-type(4){
+            grid-area: 4/3/5/4;}
+
+        p:nth-of-type(5){
+            grid-area: 3/4/4/5;}
+
+        p:nth-of-type(6){
+            grid-area: 4/4/5/5;}
+
+
+        .sec{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(4, 200px);
+            gap: 10px;}
+/* 
+        .sec p{border: 2px solid black;} */
+
+        .sec p:nth-of-type(1){
+            grid-area: 1/1/2/2;}
+
+        .sec p:nth-of-type(2){
+            grid-area: 2/1/3/2;}
+
+        .sec p:nth-of-type(3){
+            grid-area: 1/2/2/3;}
+
+        .sec p:nth-of-type(4){
+            grid-area: 2/2/3/3;}
+
+        .sec p:nth-of-type(5){
+            grid-area: 1/3/2/4;}
+
+        .sec p:nth-of-type(6){
+            grid-area: 2/3/3/4;}
+
+        .sec p:nth-of-type(7){
+            grid-area: 1/4/6/6;}
+
+        
+        .reel{
+            font-size: 36px;
+            color: white;
+        }
+        .pp{
+            font-size: 20px;
+            color: white;
+        }
+
+        .sec2{
+            background-color: rgba(0, 255, 255, 0.404);
+            background-repeat: no-repeat;
+            height: 100%;
+            width: 100%;
+            padding: 20px;
+        }
+
+        .span1{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-left: 16px;
+            padding-right: 16px;
+        }
+
+        button{
+            border-radius: 20px;
+            background-color: transparent;
+            color: white;
+            padding: 12px;
+            font-size: 18px;
+            
+        }
+
+        .span2{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            /* padding-left: 20px;
+            padding-right: 20px; */
+            padding: 16px;
+        }
+        
+        .pics1 img{
+            max-width: auto;
+            height: 100%;
+            grid-area: auto;
+            object-fit: cover;
+
+        }
+        p img{
+            max-width: 100%;
+            height: auto;
+            object-fit: cover;
+
+            /* object-fit: fill; */
+        }
+        .ADS{
+            color: black;
+            background-color: rgba(128, 128, 128, 0.448);
+        }
+        
+      
+
+        
+     
+    </style>
+</head>
+<body>
+    <nav >
+        <ul>
+            <img src="./favicon-16x16.png" alt="BBC" width="30px" height="30px">
+            <li><a href="">Sign in</a></li>
+            <li><a href="">Home</a></li>
+            <li><a href="">News</a></li>
+            <li><a href="">Sport</a></li>
+            <li><a href="">Reel</a></li>
+            <li><a href="">Worklife</a></li>
+            <li><a href="">Travel</a></li>
+            <li><a href="">Future</a></li>
+            <li><a href="">Culture</a></li>
+        </ul>
+    </nav>
+    <h1>Welcome to BBC</h1>
+<main>
+    <section class="sec1">
+    <p class="pics1">
+        <img src="https://images.unsplash.com/photo-1602828889956-45ec6cee6758?auto=format&fit=crop&q=80&w=1632&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Morning View" title="morning view of new york city" >
+    </p>
+    <p>
+        <img src="https://images.unsplash.com/photo-1553778263-73a83bab9b0c?auto=format&fit=crop&q=80&w=1471&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="" title="fres updated  news on sporst and more">
+    </p>
+    <p><img src="https://media.istockphoto.com/id/1404807618/photo/businessman-smiling-with-arms-crossed-on-white-background.jpg?s=612x612&w=0&k=20&c=_ZPa2i2VBdLGmHJEjPFiigfqmxCIdTBiZ7YYnExIw6o=" title=" Busniess,Work,profit and more" >
+    </p>
+    <p>
+        <img src="https://images.unsplash.com/photo-1620778182530-703effa65a06?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Yml0Y29pbiUyMG1pbmluZ3xlbnwwfHwwfHx8MA%3D%3D" title=" A world of crypto currency"
+    ></p>
+    <p><img src="https://media.istockphoto.com/id/1486146016/photo/space-shuttle-takes-off-on-background-of-blue-sky.jpg?s=612x612&w=0&k=20&c=j2nrCmY7ZpMTPLZYfg4FaGHFEY6R7svzXarhwz7aOOo=" title="Innovation and more" >
+       
+    
+    </p>
+
+    <p><img src="https://media.istockphoto.com/id/888121012/photo/his-team-are-always-ready-and-willing-to-help.jpg?s=612x612&w=0&k=20&c=YisG5Kmx_8ajPWGOxjUsbhN_sRFltG3sdJ9kctaHwMQ=" title="BUsiness CO-operation" ></p>
+</section>
+    
+
+    
+        <h2>News</h2>
+        <section class="sec">
+            <p><img src="https://media.istockphoto.com/id/1383967920/photo/visa-acceptance.jpg?s=612x612&w=0&k=20&c=f3zhsgNgQQhAOs5TXF7ymMfotEztfI7NBBqfOLNUrMI=" alt=""></p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum libero accusantium ea officiis magnam vero est inventore nesciunt quisquam error molestiae, nemo reprehenderit pariatur optio qui? Impedit deleniti possimus tempore!</p>
+            <p><img src="https://images.unsplash.com/photo-1536698658763-878a02695d1c?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTV8fHRvdXJpc218ZW58MHx8MHx8fDA%3D" alt="" title></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta fuga molestias laudantium cumque! Quidem veniam dolor accusamus, modi cum architecto. Doloribus ea distinctio saepe labore quaerat earum aut perferendis velit!</p>
+            <p><img src="https://images.unsplash.com/photo-1515165562839-978bbcf18277?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8dHJhaW58ZW58MHx8MHx8fDA%3D" alt="" title=""></p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere distinctio placeat ad a, optio alias vitae voluptas illum quaerat magnam soluta deserunt perspiciatis? Quisquam incidunt corrupti voluptates non exercitationem adipisci!</p>
+            <p class="ADS">ADVERTISEMENT</p>
+                <p><img src="https://media.istockphoto.com/id/1490617286/photo/school-children-and-students-picking-up-rubbish-plastic-waste-and-participate-in.jpg?s=612x612&w=0&k=20&c=uu6FlxMl1krsn_G7C9xYCUoJsjC5K2aFuPble0gwFno=" alt="" title=""></p>
+                <p><img src="https://media.istockphoto.com/id/179243711/photo/brazil-argentina-and-world-flags.jpg?s=612x612&w=0&k=20&c=hjuCkoXWXBIvM-GsYji4jZxv6hAu-1m5jBETU6cmNkY=" alt="" title=""></p>
+                <p><img src="https://media.istockphoto.com/id/1459839625/photo/mid-adult-businessman-running-for-african-american-thief-at-city-sidewalk.jpg?s=612x612&w=0&k=20&c=PcpcMpUvyvmNjFFg2sefG1IPZJ_RAkqvuqstztfCl3o=" alt="" title=""></p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis corporis id doloremque, neque facilis, aliquam nostrum eligendi perspiciatis magnam repellat aspernatur amet est, assumenda eaque hic eius commodi. At!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis corporis id doloremque, neque facilis, aliquam nostrum eligendi perspiciatis magnam repellat aspernatur amet est, assumenda eaque hic eius commodi. At!</p>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim reiciendis corporis id doloremque, neque facilis, aliquam nostrum eligendi perspiciatis magnam repellat aspernatur amet est, assumenda eaque hic eius commodi. At!</p>
+        </section>
+
+        <section class="sec2">
+            <span class="span1">
+           <span>
+            <h2 class="reel">REEL</h2>
+            <p class="pp">The most amazing video from BBC</p>
+           </span>
+           <button>Vist Reel</button>
+        </span>
+
+        <span class="span2">
+            <span>
+                <img src="https://plus.unsplash.com/premium_photo-1682098011883-04cc57f5309a?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTN8fHNvbGRpZXJ8ZW58MHx8MHx8fDA%3D" alt="desert man" width="150px" height="150px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </span>
+            <span>
+                <img src="https://images.unsplash.com/photo-1471565661762-b9dfae862dbe?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8N3x8bXVzaWNpYW58ZW58MHx8MHx8fDA%3D" alt="desert man" width="150px" height="150px">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            </span>
+            <span>
+                <img src="https://images.unsplash.com/photo-1444858291040-58f756a3bdd6?auto=format&fit=crop&q=60&w=500&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmFybXxlbnwwfHwwfHx8MA%3D%3D" alt="desert man" width="150px" height="150px">
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            </span> 
+        </span>
+           
+        </section>
+    
+</main>
+
+</body>
+</html>
